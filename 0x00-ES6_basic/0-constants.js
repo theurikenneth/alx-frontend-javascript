@@ -1,4 +1,5 @@
 export function taskFirst() {
+  /* change var to const  */
   const task = 'I prefer const when I can.';
   return task;
 }
@@ -8,6 +9,7 @@ export function getLast() {
 }
 
 export function taskNext() {
+  /* change var to let */
   let combination = 'But sometimes let';
   combination += getLast();
 
