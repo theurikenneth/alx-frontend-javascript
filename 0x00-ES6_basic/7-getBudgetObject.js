@@ -1,5 +1,5 @@
-//modify function\'s budget object to simply use the keyname instead
-export default function getBudgetObject(income, gdp, capital) {
+export default function getBudgetObject(income, gdp, capita) {
+  // modify the budget obejct to use the keyname
   const budget = {
     income,
     gdp,
