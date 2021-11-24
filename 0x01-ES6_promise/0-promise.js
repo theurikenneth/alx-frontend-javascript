@@ -1,5 +1,5 @@
 // Return a promise using thus prototype function getResponseFromAPI()
-export default function getResponseFRomAPI() {
+export default function getResponseFromAPI() {
   const responsePromise = new Promise(
     // if true, resolve to "Stuff worked"    
     (resolve) => {
