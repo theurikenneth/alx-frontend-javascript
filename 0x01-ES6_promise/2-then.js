@@ -1,6 +1,6 @@
 // Using the function prototype append three handlers
 
-export default function handleResponseFromAPI(promise) {
+function handleResponseFromAPI(promise) {
   return promise
     // appends handler .then()   
     .then(() => (
@@ -9,7 +9,7 @@ export default function handleResponseFromAPI(promise) {
     // appends handler .catch()
     .catch(() => new Error())
     // appends handler .finally()
-    .finally(() => {
-      console.log('Got a response from the API');
-  });
+    .finally(() => console.log('Got a response from the API'));
 }
+
+export defualt handleResponseFromAPI;
