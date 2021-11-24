@@ -1,4 +1,4 @@
-B/* imports the signed up user from 4-user-promise
+/* imports the signed up user from 4-user-promise
    imports photo from 5-photo-reject */
 import signUpUser from './4-user-promise';
 import uploadPhoto from './5-photo-reject';
