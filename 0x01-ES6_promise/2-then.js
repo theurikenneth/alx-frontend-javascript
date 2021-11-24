@@ -1,5 +1,4 @@
 // Using the function prototype append three handlers
-
 function handleResponseFromAPI(promise) {
   return promise
     // appends handler .then()   
