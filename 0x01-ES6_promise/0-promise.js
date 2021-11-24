@@ -1,12 +1,12 @@
 // Return a promise using getResponseFromAPI()
 function getResponseFromAPI() {
   return new Promise((resolve, reject) => {
-    // if true, resolve to "Stuff worked"
+    // if true, resolve
     if (true) {
-      resolve("Stuff worked");
-    // else reject to "it broke"
+      resolve();
+    // else reject
     } else {
-      reject("It broke");
+      reject();
     }
   });
 }
