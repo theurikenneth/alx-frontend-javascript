@@ -1,14 +1,13 @@
 // Return a promise using thus prototype function getResponseFromAPI()
-function getResponseFRomAPI() {
-  return new Promise(function(resolve, reject) => {
+export default function getResponseFRomAPI() {
+  const responsePromise = new Promise(
     // if true, resolve to "Stuff worked"    
-    if (true) {
+    (resolve) => {
       resolve("Stuff worked!");
-    } else {
-    // if false, reject with the message "it broke"
-      reject(Error("It broke"));
-    }
-  });
+    // no need for reject resolve to "it broke"
+    },  
+ );
+
+  return responsePromise;
 }
 
-export default getResponseFromAPI;
