@@ -1,6 +1,6 @@
 // Return a promise using thus prototype function getResponseFromAPI()
 export default function getResponseFromAPI() {
-  const responsePromise = new Promise(
+  const myPromise = new Promise(
     // if true, resolve to "Stuff worked"    
     (resolve) => {
       resolve();
@@ -8,6 +8,6 @@ export default function getResponseFromAPI() {
     },  
   );
 
-  return responsePromise;
+  return myPromise;
 }
 
