@@ -6,7 +6,7 @@ export default function getResponseFRomAPI() {
       resolve("Stuff worked!");
     // no need for reject resolve to "it broke"
     },  
- );
+  );
 
   return responsePromise;
 }
