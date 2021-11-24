@@ -1,4 +1,4 @@
-/* imports the signed up user from 4-user-promise
+B/* imports the signed up user from 4-user-promise
    imports photo from 5-photo-reject */
 import signUpUser from './4-user-promise';
 import uploadPhoto from './5-photo-reject';
@@ -21,4 +21,3 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
 
   return Promise.resolve([userInfo, photoInfo]);
 }
-
