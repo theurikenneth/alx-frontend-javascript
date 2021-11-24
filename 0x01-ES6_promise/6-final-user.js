@@ -4,9 +4,21 @@ import signUpUser from './4-user-promise';
 import uploadPhoto from './5-photo-reject';
 
 // takes three arguments
-function handleProfileSignup(firstName = '', lastName = '', fileName = '') {
-  // settles the promises and returns an array
-  return Promise.allSettled([uploadPhoto(filename), signUpUser(firstName, lastName)]);
+export default async function handleProfileSignup(firstName, lastName, fileName) {
+  // defines the variable userInfo
+  // pauses until the promised is settled
+  const userInfo = await signUpUser(firstName, lastName).then((info) => ({
+    status: 'fulfilled',
+    value: info,
+  }));
+
+  // defines the variable photoInfo
+  // awaits until promise is settled
+  const photoInfo = await uploadPhoto(fileName).catch((newError) => ({
+    status: 'rejected',
+    value: newError.toString(),
+  }));
+
+  return Promise.resolve([userInfo, photoInfo]);
 }
 
-export default handleProfileSignup;
