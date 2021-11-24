@@ -9,7 +9,8 @@ function handleResponseFromAPI(promise) {
     // appends handler .catch()
     .catch(() => new Error())
     // appends handler .finally()
-    .finally(() => console.log('Got a response from the API'));
+    .finally(() => {
+      console.log('Got a response from the API')});
 }
 
 export default handleResponseFromAPI;
