@@ -1,4 +1,4 @@
-/* export uploadPhoto function and accepts 
+/* export uploadPhoto function and accepts
    one argument fileName */
 export default function uploadPhoto(filename) {
   return Promise.reject(
