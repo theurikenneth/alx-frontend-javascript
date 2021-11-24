@@ -2,15 +2,15 @@
    argument mathFunction(Function). Create and return
    an array named queue */
 export default function guardrail(mathFunction) {
-  // define a variable lst
-  const lst = [];
+  // define a variable queue
+  const queue = [];
 
   try {
-    lst.push(mathFunction());
+    queue.push(mathFunction());
   } catch (new_error) {
-      lst.push(new_error.toString());
+      queue.push(new_error.toString());
   } finally {
-    lst.push('Guardrail was processed');
+    queue.push('Guardrail was processed');
   }
-  return lst;
+  return queue;
 }
