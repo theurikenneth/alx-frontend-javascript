@@ -1,5 +1,4 @@
-/* Return a promise using thus
-prototype function getResponseFromAPI() */
+// Return a promise using getResponseFromAPI()
 function getResponseFromAPI() {
   return new Promise((resolve, reject) => {
     // if true, resolve to "Stuff worked"
