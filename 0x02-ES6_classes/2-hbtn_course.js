@@ -1,7 +1,7 @@
 /* Implement a clas HolbertonCourse
    Constructor attributes are name, length and students
    attributes are scored in underscore attribute */
-export default class HolbertonCourse() {
+export default class HolbertonCourse {
   // initialize the constructor
   constructor(name='', length = 0, students = []) {
     // this is similar to self in python
