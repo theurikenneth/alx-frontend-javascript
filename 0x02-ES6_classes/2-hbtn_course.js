@@ -4,10 +4,15 @@
 export default class HolbertonCourse {
   // initialize the constructor
   constructor(name, length, students) {
+    if (typeof name !== 'string') throw new TypeError('name must be a string');
+    if (typeof length !== 'number') throw new TypeError('length must be a number');
+    if (students.constructor !== Array && students.every((el) => typeof el === 'string')) {
+      throw new TypeError('students must be an array of strings');
+    }
     // this is similar to self in python
-    this.name = name;
-    this.length = length;
-    this.students = students;
+    this._name = name;
+    this._length = length;
+    this._students = students;
   }
 
   // get returns name element from map object
@@ -45,13 +50,7 @@ export default class HolbertonCourse {
 
   // set allows storage of student value
   set students(current_students) {
-    if (typeof current_students === 'object') {
-      for (const student in current_students) {
-        if (typeof student !== 'string') {
-          throw new TypeError('Students must be an array');
-        }
-      }
-    } else {
+    if (current_students.constructor !== Array && current_students.every((el) => typeof el === 'string')) {
       throw new TypeError('Students must be an array of strings');
     }
     this._students = current_students;
