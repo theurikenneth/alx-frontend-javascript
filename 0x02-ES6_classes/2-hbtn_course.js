@@ -3,7 +3,7 @@
    attributes are scored in underscore attribute */
 export default class HolbertonCourse {
   // initialize the constructor
-  constructor(name='', length = 0, students = []) {
+  constructor(name, length, students) {
     // this is similar to self in python
     this.name = name;
     this.length = length;
