@@ -11,7 +11,7 @@ export default class Currency {
 
   // implement the method displayFullCurrency
   displayFullCurrency() {
-    return `${this._name} (${this._code})`;
+    return `${this._name} ${this._code}`;
   }
 
   // getter for code object
