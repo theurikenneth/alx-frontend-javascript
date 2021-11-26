@@ -1,4 +1,4 @@
-// function named createReportObject whose parameter, employeesList
+// function named createReportObject with employeesList
 export default function createReportObject(employeesList) {
   return { allEmployees: { ...employeesList } };
 }
