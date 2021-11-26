@@ -5,9 +5,9 @@ export default class HolbertonCourse {
   // initialize the constructor
   constructor(name, length, students) {
     // this is similar to self in python
-    this._name = name;
-    this._length = length;
-    this._students = students;
+    this.name = name;
+    this.length = length;
+    this.students = students;
   }
 
   // get returns name element from map object
