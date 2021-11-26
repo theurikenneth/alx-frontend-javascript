@@ -1,8 +1,7 @@
 /* Implement the class Currency
    with attributes code and name and store using an underscore
    implement a getter and setter for each attribute
-   implement a method displayFullCurrency
-   */
+   implement a method displayFullCurrency */
 export default class Currency {
   constructor(code, name) {
   // creates objects using this
